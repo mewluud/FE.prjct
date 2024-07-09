@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Sidebar component placeholder -->
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-md-9">
+            <!-- Navbar component placeholder -->
+            <app-navbar></app-navbar>
+            <!-- Search and Table Components -->
+            <!--<app-search (search)="onSearch($event)"></app-search>-->
+            <app-table [cars]="cars" #tableComponent (carSelected)="onCarSelected($event)" ></app-table>
+            <!-- Output Table Component -->
+            <app-output-table-component [selectedCarType]="selectedCarType" [selectedCarReference]="selectedCarReference"></app-output-table-component>
+            <app-car-edit></app-car-edit>
+        </div>
+    </div>
+</div>
+

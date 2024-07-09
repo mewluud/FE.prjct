@@ -1,0 +1,54 @@
+/*.sidebar {
+  background-color: #393E46;
+  color: #EEEEEE;
+  height: 100%;
+  width: 250px; !* Adjust width as needed *!
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 60px; !* Ensure it starts below the navbar *!
+}*/
+
+/*.list-group-item {
+  background-color: #393E46;
+  border-color: #222831;
+}*/
+
+.sidebar {
+  background-color: #393E46;
+  color: #EEEEEE;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 60px; //!* Adjust based on navbar height *!
+  padding-top: 20px; // Adjust padding as needed *!
+  overflow-y: auto; // Enable scrolling if needed *!
+}
+
+.list-group-item {
+  background-color: #393E46;
+  border-color: #222831;
+}
+
+.list-group-item.active {
+  background-color: #222831;
+  border-color: #393E46;
+}
+
+.list-group-item a {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+

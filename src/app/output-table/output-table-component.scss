@@ -1,0 +1,55 @@
+// Define variables for colors
+$primary-color: #00ADB5;
+$secondary-color: #393E46;
+$background-color: #222831;
+$text-color: #EEEEEE;
+
+// Component styles
+:host {
+  display: block;
+  margin: 100px; /* Adjust margin as needed */
+  background-color: $secondary-color;
+  padding: 20px;
+  border-radius: 10px;
+  color: $text-color;
+
+  h3 {
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    margin: auto;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 10px;
+
+    th, td {
+      padding: 10px;
+      border: 1px solid $primary-color;
+    }
+
+    th {
+      cursor: pointer;
+      background-color: $primary-color;
+      color: $text-color;
+
+      &:hover {
+        background-color: $background-color;
+        color: $primary-color;
+      }
+    }
+
+    td {
+      background-color: $background-color;
+    }
+  }
+
+  p {
+    color: $text-color;
+  }
+}
+

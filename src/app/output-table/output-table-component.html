@@ -1,0 +1,26 @@
+<div *ngIf="selectedCarType && selectedCarReference">
+    <h3>Car Details for Type: {{ selectedCarType }}</h3>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <td>{{ getCarDetails()?.name }}</td>
+        </tr>
+        <tr>
+            <th>Manufacturer</th>
+            <td>{{ getCarDetails()?.manufacturer }}</td>
+        </tr>
+        <tr>
+            <th>Model</th>
+            <td>{{ getCarDetails()?.model }}</td>
+        </tr>
+        <tr>
+            <th>Year</th>
+            <td>{{ getCarDetails()?.year }}</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+</div>
+<div *ngIf="!selectedCarType || !selectedCarReference">
+    <p>Please select a car from the table.</p>
+</div>
+

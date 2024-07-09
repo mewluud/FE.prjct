@@ -1,0 +1,30 @@
+<div class="table-container">
+  <app-search (search)="filterCars($event)"></app-search>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th (click)="sort('brand')">Brand</th>
+      <th (click)="sort('year')">Year</th>
+      <th (click)="sort('country')">Country</th>
+      <th (click)="sort('type')">Type</th>
+      <th (click)="sort('id')">Id</th>
+      <th (click)="sort('model')">model</th>
+      <th (click)="sort('manufacturer')">manufacturer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let car of sortedCars" (click)="selectCar(car)">
+      <td>{{ car.id }}</td>
+      <td>{{ car.brand }}</td>
+      <td>{{ car.year }}</td>
+      <td>{{ car.country }}</td>
+      <td>{{ car.type }}</td>
+      <td>{{ car.manufacturer }}</td>
+      <td>{{ car.model }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

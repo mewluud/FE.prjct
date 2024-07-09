@@ -1,0 +1,68 @@
+.table-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #393E46;
+  border-radius: 10px;
+  color: #EEEEEE;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: #00ADB5;
+}
+
+.form-control {
+  background-color: #222831;
+  color: #EEEEEE;
+  border: 1px solid #00ADB5;
+}
+
+.btn-primary {
+  background-color: #00ADB5;
+  border-color: #00ADB5;
+}
+
+.btn-primary:hover {
+  background-color: #222831;
+  border-color: #00ADB5;
+  color: #EEEEEE;
+}
+
+.btn-danger {
+  background-color: #FF5733;
+  border-color: #FF5733;
+}
+
+.btn-danger:hover {
+  background-color: #FF5733;
+  border-color: #FF5733;
+  color: #EEEEEE;
+}
+
+.table {
+  width: 100%;
+  background-color: #222831;
+  color: #EEEEEE;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #00ADB5;
+}
+
+.table th {
+  background-color: #00ADB5;
+  color: #222831;
+}
+
+.table td {
+  background-color: #393E46;
+}
